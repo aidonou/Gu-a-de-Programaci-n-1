@@ -10,16 +10,24 @@ public class ejercicio9 : MonoBehaviour
     public float capital1;
     public float capital2;
     public float capital3;
+    public string nombre1;
+    public string nombre2;
+    public string nombre3;
     float capitaltotal;
+    float porcentajeAportado1;
+    float porcentajeAportado2;
+    float porcentajeAportado3;
 
 
 
     void Start()
     {
         capitaltotal = capital1 + capital2 + capital3;
-        Debug.Log("El porcentaje de capital aportado de la primera persona es " + capital1 + " de " + capitaltotal);
-        Debug.Log("El porcentaje de capital aportado de la segunda persona es " + capital2 + " de " + capitaltotal);
-        Debug.Log("El porcentaje de capital aportado de la tercera persona es " + capital3 + " de " + capitaltotal);
+        porcentajeAportado1 = capital1 / capitaltotal * 100;
+        Debug.Log("Nombre: " + nombre1 + "capital aportado: " + capital1 + "Porcentaje del capital: " + porcentajeAportado1 + "Monto total aportado: " + capitaltotal);
+
+
+
     }
 
     // Update is called once per frame
